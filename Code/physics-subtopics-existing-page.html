@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="topics-page.css">
+</head>
+<body class="topic-page"> 
+    <h1>Selected Subtopics</h1> <!--Header name-->
+    <div class="topics-container" id="sub-topics"></div>
+    <div class="button-container">
+        <button onclick="window.history.back()">Go Back</button> <!--Back button to go to previous page-->
+    </div>
+
+    <script>
+    var selectedSubtopics = JSON.parse(localStorage.getItem("physicsSelectedSubtopics"));
+    var selectedSubtopicInfo = JSON.parse(localStorage.getItem("physicsSelectedSubtopicInfo"));
+
+    for (var i = 0; i < selectedSubtopics.length; i++) {
+        var subtopic = selectedSubtopics[i];
+        var info = selectedSubtopicInfo[subtopic];
+        var p = document.createElement('p');
+        p.className = 'topic'; 
+        p.innerHTML = subtopic + ": " + info;
+        document.getElementById("sub-topics").appendChild(p); 
+    }
+    </script>
+</body>
+</html>
+
+

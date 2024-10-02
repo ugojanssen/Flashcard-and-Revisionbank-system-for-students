@@ -1,0 +1,51 @@
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh; 
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#flashcard-question {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 20px; /* Spacing around text */
+    border: 2px solid #007BFF; /* Border around text */
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+#flashcard-answer {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 125px;
+    padding: 20px; /* Add some space around the text */
+    border: 2px solid #007BFF; /* Add a border around the text */
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+button {
+    display: inline-block; /* Buttons displayed in a row */
+    width: 200px; /* Width of the buttons */
+    height: 50px; /* Height of buttons */
+    margin: 5px 10px; /* Horizontal margin */
+    font-size: 20px; /* Font size of the buttons */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF; /* Background colour */
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}

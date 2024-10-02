@@ -1,0 +1,56 @@
+#menu-btn {
+    position: fixed; /* Position is fixed so the button stays in the same place */
+    top: 20px; /* Distance from top of the viewport */
+    left: 20px; /* Distance from left of the viewport */
+    font-size: 20px; /* Font size of button */
+    color: #333; /* Button color */
+    background: transparent; /* Background colour */
+    border: none; 
+    cursor: pointer; /* Cursor changes when hovering over button */
+    z-index: 2; 
+    transition: left 0.3s ease-in-out; /* Transition effect --> button moves */
+}
+
+#sidebar {
+    position: fixed; /* Sidebar is fixed to stay in the same place */
+    top: 0; /* Distance from top of the viewport */
+    left: -180px; /* Distance from left of the viewport */
+    height: 100%; /* Sidebar height */
+    width: 200px; /* Sidebar width */
+    padding: 20px; /* Sidebar padding */
+    background-color: #f0f0f0; /* Sidebar background colour */
+    transition: left 0.3s ease-in-out; /* Transition effect --> sidebar moves */
+}
+
+#menu-btn.shift {
+    left: 220px; /* Button moves to the right */
+}
+
+#main-content {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; 
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    width: 100%; /* Main content width */
+    height: 100vh; /* Main content height */
+    padding: 20px; /* Padding around main content */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+button {
+    display: block; /* Buttons displayed in a column */
+    width: 400px; /* Button width */
+    height: 100px; /* Button height */
+    margin: 10px auto; /* Margin around the buttons */
+    font-size: 30px; /* Font size of the buttons */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+    color: white; /* Buttons text colour */
+    background-color: #007BFF; /* Buttons background colour */
+    cursor: pointer; /* Change the cursor when hovering over the buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change the background color of the buttons when hovering */
+}
